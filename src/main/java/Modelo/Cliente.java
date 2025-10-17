@@ -9,5 +9,25 @@ package Modelo;
  * @author Jonatan
  */
 public class Cliente {
-    
+     
+   private String nombreCompleto;
+    private String cedula;
+
+    public Cliente(String nombreCompleto, String cedula) {
+        this.nombreCompleto = nombreCompleto;
+        this.cedula = cedula;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void mostrarInfoCliente() {
+        System.out.println("cliente: " + nombreCompleto + " | cedula: " + cedula);
+    } 
+       
 }
